@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+}
+.section-title {
+  color: rgb(53, 52, 52);
+  font-size: 3rem;
+  font-weight: 700;
+}
+/* header styles */
+header {
+  padding: 50px 240px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-right: 30px;
+  font-weight: 500px;
+  font-size: 1rem;
+}
+li > a {
+  text-decoration: none;
+}
+/* banner section */
+.banner {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 80px;
+}
+.banner-content {
+  /* max-width: 800px; */
+  margin-top: 100px;
+  color: rgb(53, 52, 52);
+}
+.banner-content > h1 {
+  font-size: 4rem;
+}
+.banner-content > p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.primary-button {
+  padding: 15px 40px;
+  border-radius: 30px;
+  color: white;
+  background-color: rgb(208, 58, 128);
+  margin-top: 20px;
+  border-style: none;
+}
+.primary-button2 {
+  padding: 15px 40px;
+  color: white;
+  background-color: rgb(208, 58, 128);
+  margin-top: 20px;
+  border-style: none;
+}
+.banner-img>img {
+  padding: 80px 150px;
+  background-image: url(images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size:570px;
+ background-position: center;
+  
+}
+/* main section */
+main {
+  max-width: 1440px;
+  margin: 30px auto;
+}
+.sponser-img{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+} 
+.main-section{
+  margin-top: 130px;
+}
+.main-section>p{
+font-size: 2.5rem;
+font-weight:600;
+text-align: center;
+color: rgb(29, 27, 27);
+}
+
+.card-container{
+  margin-top:100px ;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+  gap: 100px;
+}
+.card{
+  padding: 60px;
+  background: #fff; 
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.card-content{
+  margin-top: 30px;
+  text-align: left;
+}
+.card-content>h2,h3,p{
+  margin-top: 20px;
+}
+.fearure-section {
+ margin-top:120px;
+ display: flex;
+/* gap: 400px; */
+justify-content: space-between;
+}
+.fearure-content>h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.feture-img> img {
+  width:140%;
+}
+.fearure-content{
+ margin-top: 70px;
+}
+.footer-style{
+  padding: 10px;
+ margin-top: 120px; 
+
+  background-color:rgb(20, 18, 45) ;
+color: #fff;
+text-align: center;
+}
+.footer-style>h2{
+margin-top: 80px;
+}
+.footer-style>p{
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  /* header section */
+  header {
+    padding:10px;
+  }
+  .section-title{
+    font-size: 2rem;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .banner{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .banner-img>img{
+  width: 80%;
+  background-size:250px;
+  padding: 30px;
+  }
+  .banner-content > h1 {
+    font-size: 2rem;
+  }
+  .banner-content > p{
+   
+    font-size: 1rem;
+  }
+  /* main section */
+  main{
+    padding: 30px;
+  }
+  .sponser-img{
+  flex-direction:column;
+  width: 40%;
+  gap: 30px;
+  }
+  .main-section>p{
+    font-size: 2rem;
+  }
+  .card-container{
+    /* margin-top:100px ;
+    display: grid; */
+    grid-template-columns: repeat(1,1fr);
+    /* text-align: center;
+    gap: 100px; */
+  }
+  .card>img{
+    width: 90%;
+  }
+  .card{
+    padding: 30px;
+ }
+ .card-container{
+  gap: 20px;
+ }
+ .fearure-section{
+  flex-direction: column-reverse;
+  margin-top:20px;
+ }
+ .feture-img{
+  margin-top: 50px;
+ }
+ .feture-img> img {
+  width:100%;
+}
+
+
+}
